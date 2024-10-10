@@ -1,0 +1,144 @@
+\documentclass{article}
+\title{Antisèche de Physique}
+\author{Anya Voeffray \thanks{thanks to no fucking one, I hate Physics}}
+\date{Octobre 2024}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\begin{equation}
+	Mes Capacites En Physique =  \frac{Motivation \cdot Capacites En Maths}{Annee Depuis Le Dernier Cours De Physique}
+\end{equation}
+
+
+\end{titlepage}
+
+\section{Masse Volumique ($\varphi$)}
+
+La masse volumique permet de définir la masse d'une matière pour $1m^3$ de cette même matière.
+
+Par exemple ici, la masse volumique de l'eau:
+\begin{equation}
+	\varphi = 1000 \frac{kg}{m^3}
+\end{equation}
+
+Dans un exemple pratique, si on se retrouve avec $3l$ d'eau, pour calculer sa masse, cela donnerait:
+	\begin{equation}
+		3l = 3dm^3 = 0.003m^3
+	\end{equation}
+	
+	\begin{equation}
+		1000 \cdot 0.003 = 3kg
+	\end{equation}
+
+En résumé, voici les trois équations à se remémorer:
+\begin{equation}
+	\varphi = \frac{m}{V}
+\end{equation}
+
+\begin{equation}
+	m = \varphi \cdot V
+\end{equation}
+
+\begin{equation}
+	V = \frac{m}{\varphi}
+\end{equation}
+
+\pagebreak
+
+\section{Chaleur Massique ($C$)}
+
+La chaleur massique représente la quantité de Joules nécessaires pour augmenter la température de $1kg$ d'une matière donnée de $1 ^\circ C$
+
+\begin{equation}
+	C = \frac{J}{kg \cdot \theta}
+\end{equation}
+
+Sachant que la chaleur massique de l'eau est comme suit: $1480 \frac{J}{kg \cdot \theta}$
+
+Il est donc possible de calculer l'augmentation de la température ($\theta$) de $126kg$ d'eau à $20^\circ C$ si on lui applique $30000J$:
+
+\begin{equation}
+	\theta = \frac{J}{kg \cdot C}
+\end{equation}
+
+Une fois les données entrées:
+
+\begin{equation}
+	1.61\mathrm{e}{-1} = \frac{30000}{126 \cdot 1480}
+\end{equation}
+Dans l'ensemble, ajouter $30000 joules$ à $126kg$ d'eau résulte en une augmentation de $1.61\mathrm{e}{-1}$ degrés celsius.
+
+\subsection{Transfert d'énergie}
+
+Si on veut calculer la quantité d'énergie nécessaire pour passer d'une température données à une autre, il faut suivre l'équation suivante:
+
+\begin{equation}
+	Q = m \cdot C \cdot \Delta \theta
+\end{equation}
+
+$\Delta\theta$ représente la différence de température calculée comme suis:
+\begin{equation}
+	\theta_{final} - \theta_{initiale}
+\end{equation}
+
+Exemple:
+J'aimerais chauffer $10kg$ d'eau depuis $20^\circ C$ vers $100^\circ C$:
+\begin{equation}
+	Q = m_{eau} \cdot C_{eau} \cdot (100 - 20)
+\end{equation}
+
+Une fois avec toutes les informations:
+\begin{equation}
+	3.344\mathrm{e}{6} = 10 \cdot 4180 \cdot 80
+\end{equation}
+Il faudra donc dépenser $3.344\mathrm{e}{6}$ Joules pour chauffer $10kg$ d'eau de 80 degrés.
+
+\subsection{Transfert avec plusieurs matériaux}
+
+Pour calculer le transfert d'énergie entre plusieurs matériaux dans un environnement sans perte, il faudra suivre l'équation suivante.
+
+\begin{equation}
+	0 = m_1 \cdot C_1 \cdot \Delta\theta_1 + m_2 \cdot C_2 \cdot \Delta\theta_2
+	% 0 = m_1 \cdot C_1 \cdot (\theta_{finale} - \theta_{dep1}) + m_2 \cdot C_2 \cdot (\theta_{finale} - \theta_{dep2})
+\end{equation}
+
+Il arrivera parfois de manquer d'une information. Voici les équations avec les différents éléments isolés
+
+La température finale:
+\begin{equation}
+	\theta_{finale} = m_1 \cdot C_1 \cdot \theta_{dep1} + m_2 \cdot C_2 \cdot \theta_{dep2}
+\end{equation}
+
+Une des chaleurs massiques:
+\begin{equation}
+	C_1 = \frac{m_2 \cdot C_2 \cdot \Delta\theta_2}{m_1 \cdot \Delta\theta_1} \cdot -1
+\end{equation}
+
+Une des températures de départ:
+\begin{equation}
+	\theta_{dep1} = (\frac{m_2 \cdot C_2 \cdot \Delta\theta_2}{m_1 \cdot C_1} - \theta_{finale}) \cdot -1
+\end{equation}
+
+Une des masses:
+\begin{equation}
+	m_1 = \frac{m_2 \cdot C_2 \cdot \Delta\theta_2}{C_1 \cdot \Delta\theta_1} \cdot -1
+\end{equation}
+
+Il sera aussi possible que la chaleur massique de la matière ne soit pas existante. C'est à dire que c'est un agrégat de plusieurs matières, comme un thermos ou une cafetière. Dans ce cas, il faudra remplacer le $m \cdot C$ de la matière par son $\mu$.
+
+Le $\mu$ sera obligatoirement donné, à moins qu'il soit l'inconnu de l'équation. Dans le premier cas, voici ce que cela change à l'équation pour deux matières différentes.
+
+\begin{equation}
+	0 = m_1 \cdot C_1 \cdot \Delta\theta_1 + \mu_2 \cdot \Delta\theta_2
+\end{equation}
+
+Dans le deuxième cas, voici l'équation qu'il faudra poser pour trouver le $\mu$ de la matière:
+
+\begin{equation}
+	\mu_2 = \frac{m_1 \cdot C_1 \cdot \Delta\theta_1}{\Delta\theta_2} \cdot -1
+\end{equation}
+
+
+\end{document}
