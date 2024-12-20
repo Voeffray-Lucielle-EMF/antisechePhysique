@@ -2,6 +2,7 @@
 \title{Antisèche de Physique}
 \author{Anya Voeffray \thanks{thanks to no fucking one, I hate Physics}}
 \date{Octobre 2024}
+\usepackage{gensymb}
 
 \begin{document}
 
@@ -140,5 +141,31 @@ Dans le deuxième cas, voici l'équation qu'il faudra poser pour trouver le $\mu
 	\mu_2 = \frac{m_1 \cdot C_1 \cdot \Delta\theta_1}{\Delta\theta_2} \cdot -1
 \end{equation}
 
+\section{Transfert d'énergie avec changement d'état de la matière}
+
+Lors d'un transfert d'énergie, il est possible que la matière change d'état, par exemple de la glace qui va passer de $-10\celsius$ à $10\celsius$, elle va changer d'état et passer de solide à liquide, en l'occurrence de glace à eau.
+\newline
+C'est cette étape qui va consommer le plus d'énergie. La quantité d'énergie nécessaire pour passer de solide à liquide est propre à chaque matière et s'appelle la "Chaleur latente de fusion" ($L_f$). On la retrouve dans des tableau, elle est fixe.
+\newline
+\newline
+Par exemple on retrouvera ces valeurs:
+\newline
+\newline
+Glace (Dont l'état liquide est l'eau) $\rightarrow 3.3 \cdot 10^5$
+\newline
+Aluminium $\rightarrow 3.96 \cdot 10^5$
+\newline
+\newline
+
+On va donc retrouver une équation légèrement modifiée pour calculer l'énergie nécessaire au réchauffement de ladite matière:
+
+\begin{equation}
+	Q = m_1 \cdot C_1solide \cdot \Delta\theta_{dep a 0} + L_f1 \cdot m_1 + m_1 \cdot C_1liquide \cdot \Delta\theta_{0 a finale}
+\end{equation}
+
+On se retrouve dans la logique suivante:
+\newline
+\newline
+Il faut d'abord mener le solide jusqu'à $0\celsius$ ($m_1 \cdot C_1 \cdot \Delta\theta_{dep a 0}$) puis y ajouter la Chaleur latente de fusion ($L_f1 \cdot m_1$) et finalement ajouter l'équation pour passer le liquide à sa température finale ($m_1 \cdot C_1liquide \cdot \Delta\theta_{0 a finale}$)
 
 \end{document}
