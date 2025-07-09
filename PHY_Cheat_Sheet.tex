@@ -175,11 +175,108 @@ On se retrouve donc à devoir calculer 3 quantités d'énergie différentes qui 
 \pagebreak
 \section{Dilatation}
 
+La dilatation se fait de manière différente pour les solides, liquides et gaz.
+
 \subsection{Solides}
+
+Dans le cas des solides, il faut prendre en compte le nombre de dimensions que vont être prises en compte. On retrouvera plusieurs points:
+
+Dans le cadre des solides, on retrouve des données concernant les matières. Celles-ci sont donc disponibles dans des tableaux fournis par les enseignants:
+
+$\alpha$ : Coefficient de dilatation linéaire $\rightarrow$ ([$\frac{1}{\celsius}$])
+\newline $\alpha$ est l'allongement d'une matière (solide) donnée d'une longueur de 1 mètre si on l'augmente de 1$\celsius$
+\newline Par exemple: Si on a un file d'acier de 1m de long et qu'on l'augmente de 1$\celsius$, la longueur augmentera de 11$\cdot$$10^{-6}$ mètres 
+  
+\subsubsection{Linéaire L}
+
+Si on considère que la dilatation est linéaire, on ne calculera que dans une
+dimension. Ce que ça implique, c'est que la largeur et la profondeur de l'objet
+en question n'est pas assez grande pour influencer quoi qu'il soit dans 
+la situation donnée.
+
+\begin{equation}
+  L_2 = L_1 + \Delta_L
+\end{equation}
+
+\begin{equation}
+  L_2 = L_1 + L_1 \cdot \Delta\theta \cdot \alpha
+\end{equation}
+
+\begin{equation}
+  L_2 = L_1 \cdot (1 + \alpha \cdot \Delta\theta)
+\end{equation}
+
+\subsubsection{Surface S}
+
+Si on considère que la dilatation est une dilatation de surface, on ne 
+calculara que dans 2 dimensions. Cela implique que la profondeur de l'objet ne 
+sera pas prise en compte car on considère qu'elle n'est pas assez élevée pour 
+influencer la situation donnée.
+
+\begin{equation}
+  S_2 = S_1 \cdot (1 + 2 \cdot \alpha \cdot \Delta\theta)
+\end{equation}
+
+\subsubsection{Volume V}
+
+Si on considère que la dilatation est une dilatation volumique, on calculera la dilatation dans les 3 dimensions, longueur, largeur, profondeur.
+
+\begin{equation}
+  V_2 = V_1 \cdot (1 + 3 \cdot \alpha \cdot \Delta\theta)
+\end{equation}
 
 \subsection{Liquides}
 
-\subsection{Loi des gaz}
+Les liquides ne sont que calculés avec le volume. On y retrouve donc qu'une 
+seule équation.
+\newline $\gamma$, dans ce cas remplace $\alpha$. C'est le coefficient de 
+dilatation volumique.
+\newline A noter aussi que le coefficient de dilatation des liquides est 1'000 
+fois plus grand que celui des solides, c'est pour ça qu'il n'est pas possible 
+de calculer la dilatation d'un liquide dans la surface ou la linéarité.
+
+\begin{equation}
+  V_2 = V_1 \cdot (1 + \gamma \cdot \Delta\theta)
+\end{equation}
+
+\pagebreak
+
+\section{Loi des gaz}
+
+\subsection{Grandeurs physique}
+
+\begin{itemize}
+  \item Volume [$m^3$]
+  \item Pression [bar] / [Pa]
+  \item Température [K] $\rightarrow$ T \newline Pour passer de $\celsius$ à Kelvin il faut ajouter 273,15 aux Celsius
+  \item Pression atmosphérique $\rightarrow$ 1 [bar] / 100'000 [Pa]
+\end{itemize}
+
+\subsection{Conditions}
+
+\begin{itemize}
+  \item La Température [T] doit être en valeur absolue, donc en Kelvin
+  \item La pression doit être en valeur absolue
+  \item La quantité de gaz ne doit pas changer
+\end{itemize}
+
+\subsection{Equations}
+
+\begin{equation}
+  \frac{p_0 \cdot V_0}{T_0} = \frac{p_1 \cdot V_1}{T_1}
+\end{equation}
+
+\begin{equation}
+  p_0 \cdot V_0 = p_1 \cdot V_1
+\end{equation}
+
+\begin{equation}
+  \frac{V_0}{T_0} = \frac{V_1}{T_1}
+\end{equation}
+
+\begin{equation}
+  \frac{p_0}{T_0} = \frac{p_1}{T_1}
+\end{equation}
 
 \pagebreak
 \section{Electricité}
