@@ -2,7 +2,7 @@
 \title{Antisèche de Physique}
 \author{Anya Voeffray \thanks{thanks to no fucking one, I hate Physics}}
 \date{Septembre 2024 - Juillet 2026}
-\usepackage{gensymb}
+\usepackage{gensymb,amsmath}
 
 \begin{document}
 
@@ -331,9 +331,7 @@ Voici donc l'équation:
 \end{equation}
 
 \pagebreak
-\section{Les Forces}
-
-\subsection{La loi de Hooke}
+\section{MEC5 - La loi de Hooke}
 
 La loi de Hooke calcule l'extension d'un ressort selon la force appliquée au ressort.
 
@@ -361,7 +359,7 @@ Par exemple, pour un ressort avec une raideur de 9[N/m], et qu'on y applique une
 
 On retrouve donc un allongement de 2 mètres pour ce ressort.
 
-\subsection{La gravitation universelle}
+\section{MEC6 - La gravitation universelle}
 
 La loi de la gravitation universelle formulée par Isaac Newton décrit l'attraction mutuelle entre deux corps ayant une masse.
 \newline
@@ -398,7 +396,81 @@ rayon de la lune = 1'737.4 km
 G = 6.674 \cdot 10^{-11}
 
 \begin{equation}
-  6.674 \cdot 10^{-11} \cdot \frac{5.972 \cdot 10^{24} \cdot 7.35 \cdot 10^{22}}{384'400^2}
+  6.674 \cdot 10^{-11} \cdot \frac{5.972 \cdot 10^{24} \cdot 7.35 \cdot 10^{22}}{392'515.4^2}
 \end{equation}
+
+
+\section{MEC7 - Les forces concurentes}
+
+Pour ce chapitre on travail soit sur un système statique, soit sur un système en MRU (Mouvement Rectiligne Uniforme).
+L'accélération sera prise en compte dans MEC12.
+\newline
+\newline
+Comme on est dans des systèmes sans accélération, les forces s'annulent.
+La somme de toutes les forces qui s'appliquent à l'objet est donc égal à zéro.
+
+\begin{equation}
+  \sum\vec{F} = 0
+\end{equation}
+\newline
+Prenons en exemple les forces suivantes qui s'appliquent à un cube posé au sol:
+\newline
+
+\begin{equation}
+\vec{P}, \vec{T}, \vec{N}
+\end{equation}
+\newline
+Dans notre système, le cube est immobile au sol, on retrouve donc cette équation:
+
+\begin{equation}
+  \vec{P} + \vec{T} + \vec{N} = 0
+\end{equation}
+\newline
+Un vecteur se note de différente manières:
+
+\begin{itemize}
+  \item Notation polaire:
+
+    \begin{equation}
+      \vec{F} = (norme ; angle)
+    \end{equation}
+  
+  \item Notation cartésienne:
+   
+    \begin{equation}
+      \vec{F} = 
+      \begin{pmatrix}
+        x \\
+        y
+      \end{pmatrix}
+    \end{equation}
+
+\end{itemize}
+\newline
+Il est bien évidemment possible de passer d'une notation à l'autre.
+
+Polaire \rightarrow Cartésienne:
+
+\begin{equation}
+  \vec{F} = 
+  \begin{pmatrix}
+    norme \cdot \cos{(angle)} \\
+    norme \cdot \sin{(angle)}
+  \end{pmatrix} 
+\end{equation}
+
+Cartésienne \rightarrow Polaire:
+
+\begin{equation}
+  norme = \sqrt{x^2 \cdot y^2}
+\end{equation}
+
+\begin{equation}
+  angle = \tan^{-1}{(\frac{y}{x})}
+\end{equation}
+
+\section{MEC12 - Loi fondamentale de la dynamique}
+
+
 
 \end{document}
